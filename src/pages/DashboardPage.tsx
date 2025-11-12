@@ -12,7 +12,7 @@ export const DashboardPage: React.FC = () => {
   const isLoading = useAppSelector(selectAuthLoading);
   const [dashboardData, setDashboardData] = useState<DashboardStats | null>(null);
   const [dashboardLoading, setDashboardLoading] = useState(true);
-  const [dashboardError, setDashboardError] = useState<string | null>(null);
+  // const [dashboardError, setDashboardError] = useState<string | null>(null);
 
   // Load dashboard data
   useEffect(() => {
@@ -21,7 +21,7 @@ export const DashboardPage: React.FC = () => {
       
       try {
         setDashboardLoading(true);
-        setDashboardError(null);
+        // setDashboardError(null);
         
         // Get stored tokens
         const tokensString = localStorage.getItem('tokens');
@@ -38,7 +38,7 @@ export const DashboardPage: React.FC = () => {
           throw new Error(response.message || 'Failed to load dashboard data');
         }
       } catch (error: any) {
-        setDashboardError(error.message);
+        // setDashboardError(error.message);
       } finally {
         setDashboardLoading(false);
       }

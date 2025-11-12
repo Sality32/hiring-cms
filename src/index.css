@@ -1,4 +1,4 @@
-/* Tailwind CSS */
+/* Tailwind CSS - PostCSS with @apply directive support */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

@@ -35,7 +35,7 @@ const PublicRoute: React.FC<{ children: React.ReactNode }> = ({ children }) => {
 const AppRoutes: React.FC = () => {
   const dispatch = useAppDispatch();
   const isLoading = useAppSelector(selectAuthLoading);
-  const isAuthenticated = useAppSelector(selectIsAuthenticated);
+  // const isAuthenticated = useAppSelector(selectIsAuthenticated);
   
   // Initialize auth on app startup
   useEffect(() => {
