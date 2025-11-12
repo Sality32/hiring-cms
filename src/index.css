@@ -31,15 +31,15 @@ code {
   }
   
   .btn-primary {
-    @apply bg-primary-600 text-white hover:bg-primary-700 focus:ring-primary-500;
+    @apply bg-primary-main text-white hover:bg-primary-hover focus:ring-primary-main;
   }
   
   .btn-secondary {
-    @apply bg-secondary-200 text-secondary-900 hover:bg-secondary-300 focus:ring-secondary-500;
+    @apply bg-secondary-main text-white hover:bg-secondary-hover focus:ring-secondary-main;
   }
   
   .btn-danger {
-    @apply bg-red-600 text-white hover:bg-red-700 focus:ring-red-500;
+    @apply bg-danger-main text-white hover:bg-danger-hover focus:ring-danger-main;
   }
   
   .btn-outline {
@@ -55,11 +55,11 @@ code {
   }
   
   .input {
-    @apply block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-primary-500 focus:border-primary-500 text-sm;
+    @apply block w-full px-3 py-2 border border-neutral-40 rounded-lg shadow-input placeholder-neutral-60 focus:outline-none focus:ring-primary-main focus:border-primary-main text-sm;
   }
   
   .input-error {
-    @apply border-red-300 text-red-900 placeholder-red-300 focus:ring-red-500 focus:border-red-500;
+    @apply border-danger-border text-danger-main placeholder-danger-main focus:ring-danger-main focus:border-danger-main;
   }
   
   .label {

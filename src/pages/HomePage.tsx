@@ -25,19 +25,19 @@ export const HomePage: React.FC = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             {isAuthenticated ? (
               <Link to="/dashboard">
-                <Button size="lg" className="w-full sm:w-auto">
+                <Button size="large" className="w-full sm:w-auto">
                   Go to Dashboard
                 </Button>
               </Link>
             ) : (
               <>
                 <Link to="/login">
-                  <Button size="lg" className="w-full sm:w-auto">
+                  <Button size="large" className="w-full sm:w-auto">
                     Sign In
                   </Button>
                 </Link>
                 <Link to="/register">
-                  <Button variant="outline" size="lg" className="w-full sm:w-auto">
+                  <Button variant="primary" size="large" className="w-full sm:w-auto">
                     Get Started
                   </Button>
                 </Link>
@@ -101,7 +101,7 @@ export const HomePage: React.FC = () => {
           </p>
           {!isAuthenticated && (
             <Link to="/register">
-              <Button size="lg">
+              <Button size="large">
                 Start Free Trial
               </Button>
             </Link>
