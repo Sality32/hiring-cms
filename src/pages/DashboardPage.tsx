@@ -118,8 +118,8 @@ export const DashboardPage: React.FC = () => {
               </div>
               <Button
                 onClick={handleLogout}
-                variant="outline"
-                size="sm"
+                variant="warning"
+                size="small"
                 isLoading={isLoading}
               >
                 Logout
